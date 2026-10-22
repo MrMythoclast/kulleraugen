@@ -4,7 +4,7 @@
 #include <LovyanGFX.hpp>
 
 // GC9A01 240x240 round display, wired as:
-// SCL=GPIO4, SDA=GPIO10, DC=GPIO2, CS=GPIO7, RST=GPIO3
+// SCL=GPIO5, SDA=GPIO6, DC=GPIO2, CS=GPIO7, RST=GPIO3
 class LGFX : public lgfx::LGFX_Device {
   lgfx::Panel_GC9A01 _panel;
   lgfx::Bus_SPI _bus;
@@ -20,8 +20,8 @@ public:
       cfg.spi_3wire = true;
       cfg.use_lock = true;
       cfg.dma_channel = SPI_DMA_CH_AUTO;
-      cfg.pin_sclk = 4;
-      cfg.pin_mosi = 10;
+      cfg.pin_sclk = 5;
+      cfg.pin_mosi = 6;
       cfg.pin_miso = -1;
       cfg.pin_dc = 2;
       _bus.config(cfg);

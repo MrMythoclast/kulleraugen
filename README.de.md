@@ -51,12 +51,15 @@ Ein Doppelklick auf den BOOT-Knopf wechselt zwischen fünf Gesichtern. Alle zeig
 
 | Display | ESP32-C3 |
 |---|---|
-| SCL | GPIO 4 |
-| SDA | GPIO 10 |
+| SCL | GPIO 5 |
+| SDA | GPIO 6 |
 | DC | GPIO 2 |
 | CS | GPIO 7 |
 | RST | GPIO 3 |
-| VCC / GND | 3,3 V / GND |
+| VCC | 3,3 V |
+| GND | GND |
+
+Die Pins lassen sich in `src/display.h` ändern.
 
 ## Aufspielen
 
