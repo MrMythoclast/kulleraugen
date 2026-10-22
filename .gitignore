@@ -1,0 +1,12 @@
+# PlatformIO
+.pio/
+.vscode/
+
+# lokale Arbeitsdateien
+.superpowers/
+AENDERUNGEN.md
+
+# Python
+__pycache__/
+*.png
+start.bat

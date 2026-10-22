@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="300" viewBox="0 0 880 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#2a1f4d"/>
+      <stop offset="1" stop-color="#0d0a1c"/>
+    </radialGradient>
+    <radialGradient id="face" cx="50%" cy="35%" r="65%">
+      <stop offset="0" stop-color="#ffe9f3"/>
+      <stop offset="1" stop-color="#f7c6dd"/>
+    </radialGradient>
+    <radialGradient id="iris" cx="50%" cy="65%" r="60%">
+      <stop offset="0" stop-color="#7fd6ff"/>
+      <stop offset="0.6" stop-color="#3a7bd5"/>
+      <stop offset="1" stop-color="#1b2f6e"/>
+    </radialGradient>
+  </defs>
+  <rect width="880" height="300" rx="24" fill="url(#bg)"/>
+  <g fill="#fff" opacity="0.7">
+    <circle cx="60" cy="50" r="2"/><circle cx="820" cy="70" r="2.5"/><circle cx="760" cy="240" r="1.8"/>
+    <circle cx="120" cy="250" r="1.5"/><circle cx="420" cy="30" r="1.6"/><circle cx="660" cy="30" r="1.4"/>
+  </g>
+  <!-- round display -->
+  <circle cx="160" cy="150" r="118" fill="#1a1a1f"/>
+  <circle cx="160" cy="150" r="104" fill="url(#face)"/>
+  <g>
+    <ellipse cx="122" cy="140" rx="27" ry="34" fill="url(#iris)"/>
+    <ellipse cx="198" cy="140" rx="27" ry="34" fill="url(#iris)"/>
+    <ellipse cx="130" cy="126" rx="10" ry="12" fill="#fff"/>
+    <ellipse cx="206" cy="126" rx="10" ry="12" fill="#fff"/>
+    <circle cx="114" cy="156" r="4.5" fill="#fff" opacity="0.9"/>
+    <circle cx="190" cy="156" r="4.5" fill="#fff" opacity="0.9"/>
+  </g>
+  <ellipse cx="96" cy="186" rx="15" ry="8" fill="#ff8fb8" opacity="0.6"/>
+  <ellipse cx="224" cy="186" rx="15" ry="8" fill="#ff8fb8" opacity="0.6"/>
+  <path d="M146 192 Q153 201 160 192 Q167 201 174 192" fill="none" stroke="#7a3b5a" stroke-width="4" stroke-linecap="round"/>
+  <!-- text -->
+  <text x="320" y="138" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="68" font-weight="700" fill="#fff">Kulleraugen</text>
+  <text x="322" y="182" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" fill="#c9bff2">Ein Wetter-Gesicht für das runde GC9A01-Display</text>
+  <text x="322" y="214" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" fill="#8f86b8">ESP32-C3 · 240×240 · 5 Gesichter · Laune nach Wetter</text>
+  <g font-family="Segoe UI Emoji, Apple Color Emoji, sans-serif" font-size="26">
+    <text x="322" y="258">☀️</text><text x="362" y="258">☁️</text><text x="402" y="258">🌧️</text><text x="442" y="258">❄️</text>
+  </g>
+</svg>
