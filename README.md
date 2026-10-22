@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.svg" alt="Kulleraugen" width="760">
+  <img src="docs/img/banner.png" alt="Kulleraugen – Wetter-Gesicht mit großen Augen" width="900">
 </p>
 
 <p align="center">
@@ -12,26 +12,35 @@
 Ein rundes GC9A01-Display am ESP32-C3 wird zu einem Gesicht mit großen Kulleraugen.
 **Die Laune zeigt das Wetter.** Zwischendurch blendet es Uhrzeit und Vorhersage ein.
 
-| Wetter | Laune |
-|---|---|
-| ☀️ Sonne | fröhlich |
-| ☁️ Wolken | gelangweilt |
-| 🌧️ Regen | grimmig |
-| ❄️ Schnee | zittert vor Kälte |
-| 📡 kein WLAN | verwirrt |
+Alle Bilder auf dieser Seite sind echte Aufnahmen direkt aus dem Bildspeicher des Geräts.
+
+## Launen
+
+Das Wetter bestimmt die Laune, und die Irisfarbe folgt dem Wetter. Hier am Beispiel der Anime-Glanzaugen:
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/img/mood0.png" width="150"><br><b>☀️ Sonne</b><br>fröhlich</td>
+    <td align="center"><img src="docs/img/mood1.png" width="150"><br><b>☁️ Wolken</b><br>gelangweilt</td>
+    <td align="center"><img src="docs/img/mood2.png" width="150"><br><b>🌧️ Regen</b><br>grimmig</td>
+    <td align="center"><img src="docs/img/mood3.png" width="150"><br><b>❄️ Schnee</b><br>zittert vor Kälte</td>
+    <td align="center"><img src="docs/img/mood4.png" width="150"><br><b>📡 kein WLAN</b><br>verwirrt</td>
+  </tr>
+</table>
 
 ## Gesichter
 
-Per Doppelklick auf den BOOT-Knopf wechselst du zwischen fünf Gesichtern.
-Alle zeigen die Wetter-Laune, die Irisfarbe folgt dem Wetter.
+Ein Doppelklick auf den BOOT-Knopf wechselt zwischen fünf Gesichtern. Alle zeigen die Wetter-Laune.
 
-| Nr. | Gesicht |
-|---|---|
-| 0 | **Kulleraugen** – das ursprüngliche Gesicht |
-| 1 | **Anime-Glanzaugen** |
-| 2 | **Chibi-Kätzchen** |
-| 3 | **Sternenglitzer** |
-| 4 | **Pastell-Träumerchen** |
+<table>
+  <tr>
+    <td align="center"><img src="docs/img/face0.png" width="150"><br><b>0 · Kulleraugen</b><br>das ursprüngliche<br>Gesicht</td>
+    <td align="center"><img src="docs/img/face1.png" width="150"><br><b>1 · Anime-Glanzaugen</b><br>große Glanzpunkte<br>und Wimpern</td>
+    <td align="center"><img src="docs/img/face2.png" width="150"><br><b>2 · Chibi-Kätzchen</b><br>Öhrchen, Schnurrhaare<br>und Katzenmund</td>
+    <td align="center"><img src="docs/img/face3.png" width="150"><br><b>3 · Sternenglitzer</b><br>Sternenaugen, Funkeln<br>und Herzchen</td>
+    <td align="center"><img src="docs/img/face4.png" width="150"><br><b>4 · Pastell-Träumerchen</b><br>sanfter Pastell-<br>Verlauf</td>
+  </tr>
+</table>
 
 ## Hardware
 
@@ -104,7 +113,7 @@ src/faces/      die Gesichter und ihr gemeinsamer Augen-Renderer
 lib/logic/      hardwareunabhängige Logik (Knopf, Farbpaletten)
 test/           Unity-Tests für lib/logic
 tools/          snapshot.py
-docs/           Konzept und Umsetzungsplan der Kawaii-Gesichter
+docs/           Konzept, Umsetzungsplan und Bilder
 ```
 
 ## Fehlersuche
