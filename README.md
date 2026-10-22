@@ -1,51 +1,54 @@
 <p align="center">
-  <img src="docs/img/banner.png" alt="Kulleraugen – Wetter-Gesicht mit großen Augen" width="900">
+  <img src="docs/img/banner.png" alt="Kulleraugen – a weather face with big round eyes" width="900">
 </p>
+
+<p align="center"><b>English</b> · <a href="README.de.md">Deutsch</a></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/ESP32--C3-Arduino-blue?logo=espressif&logoColor=white" alt="ESP32-C3">
-  <img src="https://img.shields.io/badge/PlatformIO-Projekt-orange?logo=platformio&logoColor=white" alt="PlatformIO">
+  <img src="https://img.shields.io/badge/PlatformIO-project-orange?logo=platformio&logoColor=white" alt="PlatformIO">
   <img src="https://img.shields.io/badge/Display-GC9A01%20240%C3%97240-ff69b4" alt="GC9A01">
-  <img src="https://img.shields.io/badge/Lizenz-MIT-green" alt="MIT">
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT">
 </p>
 
-Ein rundes GC9A01-Display am ESP32-C3 wird zu einem Gesicht mit großen Kulleraugen.
-**Die Laune zeigt das Wetter.** Zwischendurch blendet es Uhrzeit und Vorhersage ein.
+**Kulleraugen** (German for "big round goggle eyes") turns a round GC9A01 display on an ESP32-C3
+into a face with big, expressive eyes. **Its mood shows the weather outside.** In between, it shows
+the time and the forecast.
 
-Alle Bilder auf dieser Seite sind echte Aufnahmen direkt aus dem Bildspeicher des Geräts.
+Every image on this page is a real capture taken straight from the device's frame buffer.
 
-## Launen
+## Moods
 
-Das Wetter bestimmt die Laune, und die Irisfarbe folgt dem Wetter. Hier am Beispiel der Anime-Glanzaugen:
+The weather sets the mood, and the iris colour follows the weather. Shown here on the Anime Sparkle Eyes:
 
 <table>
   <tr>
-    <td align="center"><img src="docs/img/mood0.png" width="150"><br><b>☀️ Sonne</b><br>fröhlich</td>
-    <td align="center"><img src="docs/img/mood1.png" width="150"><br><b>☁️ Wolken</b><br>gelangweilt</td>
-    <td align="center"><img src="docs/img/mood2.png" width="150"><br><b>🌧️ Regen</b><br>grimmig</td>
-    <td align="center"><img src="docs/img/mood3.png" width="150"><br><b>❄️ Schnee</b><br>zittert vor Kälte</td>
-    <td align="center"><img src="docs/img/mood4.png" width="150"><br><b>📡 kein WLAN</b><br>verwirrt</td>
+    <td align="center"><img src="docs/img/mood0.png" width="150"><br><b>☀️ Sun</b><br>happy</td>
+    <td align="center"><img src="docs/img/mood1.png" width="150"><br><b>☁️ Clouds</b><br>bored</td>
+    <td align="center"><img src="docs/img/mood2.png" width="150"><br><b>🌧️ Rain</b><br>grumpy</td>
+    <td align="center"><img src="docs/img/mood3.png" width="150"><br><b>❄️ Snow</b><br>shivering</td>
+    <td align="center"><img src="docs/img/mood4.png" width="150"><br><b>📡 No Wi-Fi</b><br>confused</td>
   </tr>
 </table>
 
-## Gesichter
+## Faces
 
-Ein Doppelklick auf den BOOT-Knopf wechselt zwischen fünf Gesichtern. Alle zeigen die Wetter-Laune.
+Double-click the BOOT button to switch between five faces. All of them show the weather mood.
 
 <table>
   <tr>
-    <td align="center"><img src="docs/img/face0.png" width="150"><br><b>0 · Kulleraugen</b><br>das ursprüngliche<br>Gesicht</td>
-    <td align="center"><img src="docs/img/face1.png" width="150"><br><b>1 · Anime-Glanzaugen</b><br>große Glanzpunkte<br>und Wimpern</td>
-    <td align="center"><img src="docs/img/face2.png" width="150"><br><b>2 · Chibi-Kätzchen</b><br>Öhrchen, Schnurrhaare<br>und Katzenmund</td>
-    <td align="center"><img src="docs/img/face3.png" width="150"><br><b>3 · Sternenglitzer</b><br>Sternenaugen, Funkeln<br>und Herzchen</td>
-    <td align="center"><img src="docs/img/face4.png" width="150"><br><b>4 · Pastell-Träumerchen</b><br>sanfter Pastell-<br>Verlauf</td>
+    <td align="center"><img src="docs/img/face0.png" width="150"><br><b>0 · Kulleraugen</b><br>the original<br>face</td>
+    <td align="center"><img src="docs/img/face1.png" width="150"><br><b>1 · Anime Sparkle Eyes</b><br>big highlights<br>and lashes</td>
+    <td align="center"><img src="docs/img/face2.png" width="150"><br><b>2 · Chibi Kitten</b><br>ears, whiskers<br>and a cat mouth</td>
+    <td align="center"><img src="docs/img/face3.png" width="150"><br><b>3 · Starry Glitter</b><br>star eyes, sparkles<br>and little hearts</td>
+    <td align="center"><img src="docs/img/face4.png" width="150"><br><b>4 · Pastel Dreamer</b><br>soft pastel<br>gradient</td>
   </tr>
 </table>
 
 ## Hardware
 
-- ESP32-C3 (z. B. ESP32-C3 DevKitM-1 oder SuperMini)
-- Rundes GC9A01-Display, 240 × 240 Pixel, SPI
+- ESP32-C3 (e.g. ESP32-C3 DevKitM-1 or SuperMini)
+- Round GC9A01 display, 240 × 240 pixels, SPI
 
 | Display | ESP32-C3 |
 |---|---|
@@ -54,74 +57,76 @@ Ein Doppelklick auf den BOOT-Knopf wechselt zwischen fünf Gesichtern. Alle zeig
 | DC | GPIO 2 |
 | CS | GPIO 7 |
 | RST | GPIO 3 |
-| VCC / GND | 3,3 V / GND |
+| VCC / GND | 3.3 V / GND |
 
-## Aufspielen
+## Flashing
 
-Mit [PlatformIO](https://platformio.org/):
+With [PlatformIO](https://platformio.org/):
 
 ```
 pio run -t upload
 ```
 
-Benutzte Bibliotheken: [LovyanGFX](https://github.com/lovyan03/LovyanGFX),
+Libraries used: [LovyanGFX](https://github.com/lovyan03/LovyanGFX),
 [WiFiManager](https://github.com/tzapu/WiFiManager), [ArduinoJson](https://arduinojson.org/).
-PlatformIO lädt sie automatisch.
+PlatformIO downloads them automatically.
 
-## Erster Start
+## First start
 
-1. Das Display zeigt „Hallo!“ und öffnet das WLAN **Kulleraugen**.
-2. Mit dem Handy verbinden; die Einrichtungsseite öffnet sich (sonst `192.168.4.1` aufrufen).
-3. WLAN auswählen, Passwort und Wohnort (PLZ, Stadt oder ganze Adresse) eintragen, speichern.
-4. Wird der Ort nicht gefunden, kommt die Einrichtung noch einmal.
+The on-device texts and the setup page are in German.
 
-Das Wetter kommt von [Open-Meteo](https://open-meteo.com/), der Ort wird über
-[OpenStreetMap Nominatim](https://nominatim.org/) gesucht. Ein API-Schlüssel ist nicht nötig.
+1. The display shows "Hallo!" and opens the Wi-Fi network **Kulleraugen**.
+2. Connect with your phone. The setup page opens by itself (otherwise go to `192.168.4.1`).
+3. Pick your Wi-Fi, enter the password and your location ("Wohnort": postcode, city or full address), then save.
+4. If the location can't be found, setup starts again.
 
-## BOOT-Knopf
+Weather data comes from [Open-Meteo](https://open-meteo.com/), the location is looked up with
+[OpenStreetMap Nominatim](https://nominatim.org/). No API key needed.
 
-| Bedienung | Wirkung |
+## BOOT button
+
+| Action | Effect |
 |---|---|
-| Doppelklick | nächstes Gesicht |
-| 1,5–3 s halten, loslassen | Anzeige um 45° im Uhrzeigersinn drehen (acht Stufen) |
-| 5 s halten (roter Ring ab 3 s) | Einstellungen löschen, Einrichtung startet neu |
+| Double-click | next face |
+| Hold 1.5–3 s, release | rotate the display 45° clockwise (eight steps) |
+| Hold 5 s (red ring from 3 s) | erase settings and restart setup |
 
-Gesicht und Drehung bleiben nach einem Neustart erhalten.
+Face and rotation are kept across restarts.
 
-## Für Entwickler
+## For developers
 
-### Fotos und Bildrate
+### Screenshots and frame rate
 
-`python tools/snapshot.py COM23 bild.png [befehle]` holt ein Bild aus dem Gerät
-(braucht `pyserial` und `Pillow`).
+`python tools/snapshot.py COM23 image.png [commands]` grabs an image from the device
+(needs `pyserial` and `Pillow`).
 
-| Befehl | Wirkung |
+| Command | Effect |
 |---|---|
-| `f` | nächstes Gesicht |
-| `m0` … `m4` | Laune erzwingen (fröhlich, gelangweilt, grimmig, frierend, verwirrt) |
-| `w0` … `w3` | Wetter erzwingen (Sonne, Wolken, Regen, Schnee) |
-| `x` | zurück zu echtem Wetter |
-| `p` | Gesicht festhalten (keine Uhrzeit-/Vorhersage-Seiten) |
+| `f` | next face |
+| `m0` … `m4` | force a mood (happy, bored, grumpy, cold, confused) |
+| `w0` … `w3` | force the weather (sun, clouds, rain, snow) |
+| `x` | back to the real weather |
+| `p` | hold the face (no time/forecast pages) |
 
-Alle 5 s kommt `FPS n` über die serielle Schnittstelle.
+Every 5 s the device prints `FPS n` on the serial port.
 
-### Aufbau
+### Layout
 
 ```
-src/            Hauptprogramm, Display, Wetter, Bildschirme
-src/faces/      die Gesichter und ihr gemeinsamer Augen-Renderer
-lib/logic/      hardwareunabhängige Logik (Knopf, Farbpaletten)
-test/           Unity-Tests für lib/logic
+src/            main program, display, weather, screens
+src/faces/      the faces and their shared eye renderer
+lib/logic/      hardware-independent logic (button, colour palettes)
+test/           Unity tests for lib/logic
 tools/          snapshot.py
-docs/           Konzept, Umsetzungsplan und Bilder
+docs/           design notes, implementation plan (German) and images
 ```
 
-## Fehlersuche
+## Troubleshooting
 
-- **Display bleibt nach dem Aufspielen schwarz und es kommen keine `FPS`-Zeilen:**
-  Der Chip steht im Download-Modus. Ab- und wieder anstecken, ohne BOOT zu drücken.
-- **Farben sehen falsch aus:** In `src/display.h` `cfg.invert` bzw. `cfg.rgb_order` umdrehen.
+- **Display stays black after flashing and no `FPS` lines appear:**
+  The chip is stuck in download mode. Unplug and plug it back in without pressing BOOT.
+- **Colours look wrong:** flip `cfg.invert` or `cfg.rgb_order` in `src/display.h`.
 
-## Lizenz
+## License
 
 [MIT](LICENSE)
